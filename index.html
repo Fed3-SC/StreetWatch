@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrabajoListo</title>
+    <title>Relojería - Tienda de Relojes</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Relojería</h1>
+            <p>Tienda online de relojes de calidad</p>
+        </header>
+
+        <main>
+            <section class="products">
+                <h2>Nuestros Relojes</h2>
+                <div class="product-list">
+                    <div class="product-card">
+                        <h3>Reloj Deportivo</h3>
+                        <p class="price">$250</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>Reloj Clásico</h3>
+                        <p class="price">$450</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>Reloj Smartwatch</h3>
+                        <p class="price">$600</p>
+                    </div>
+                    <div class="product-card">
+                        <h3>Reloj Digital</h3>
+                        <p class="price">$180</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shopping">
+                <h2>Realizar Compra</h2>
+                <button class="btn" onclick="iniciarCompra()">Comprar Ahora</button>
+                <div id="resultado" class="resultado"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Relojería - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
