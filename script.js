@@ -102,9 +102,9 @@ function calcularPrecio(numeroReloj, cantidad) {
   }
 }
 
-// Calcula el IVA (16%) sobre un monto
+// Calcula el IVA (21%) sobre un monto
 function calcularIVA(monto) {
-  const iva = monto * 0.16
+  const iva = monto * 0.21
   return {
     monto: monto,
     iva: iva,
