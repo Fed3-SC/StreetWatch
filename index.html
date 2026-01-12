@@ -4,43 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relojería - Tienda de Relojes</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Cambiados todos los IDs y clases a español -->
+    <div class="contenedor">
         <header>
             <h1>Relojería</h1>
             <p>Tienda online de relojes de calidad</p>
         </header>
 
         <main>
-            <section class="products">
+            <section class="productos">
                 <h2>Nuestros Relojes</h2>
-                <div class="product-list">
-                    <div class="product-card">
-                        <h3>Reloj Deportivo</h3>
-                        <p class="price">$250</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>Reloj Clásico</h3>
-                        <p class="price">$450</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>Reloj Smartwatch</h3>
-                        <p class="price">$600</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>Reloj Digital</h3>
-                        <p class="price">$180</p>
-                    </div>
+                <div class="lista-productos" id="listaProductos">
+                    <!-- Los productos se generan dinámicamente con JS -->
                 </div>
             </section>
 
-            <section class="shopping">
+            <!-- Formulario de compra -->
+            <section class="compras">
                 <h2>Realizar Compra</h2>
-                <button class="btn" onclick="iniciarCompra()">Comprar Ahora</button>
-                <div id="resultado" class="resultado"></div>
+                <form id="formularioCompra" class="formulario-compra">
+                    <div class="grupo-formulario">
+                        <label for="selectorReloj">Selecciona un reloj:</label>
+                        <select id="selectorReloj" required>
+                            <option value="">-- Elige un reloj --</option>
+                        </select>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="entradaCantidad">Cantidad:</label>
+                        <input type="number" id="entradaCantidad" min="1" value="1" required>
+                    </div>
+                    <div class="botones-formulario">
+                        <button type="submit" class="boton">Agregar al Carrito</button>
+                        <button type="button" class="boton boton-secundario" id="botonVaciar">Vaciar Carrito</button>
+                    </div>
+                </form>
+                
+                <!-- Mensajes de estado -->
+                <div id="mensaje" class="mensaje"></div>
             </section>
+
+            <!-- Carrito de compras -->
+            <section class="carrito" id="seccionCarrito">
+                <h2>Carrito de Compras</h2>
+                <div id="itemsCarrito" class="items-carrito"></div>
+                <div id="totalCarrito" class="total-carrito"></div>
+                <button class="boton boton-finalizar" id="botonFinalizar" style="display: none;">Finalizar Compra</button>
+            </section>
+
+            <!-- Resultado final -->
+            <div id="resultado" class="resultado"></div>
         </main>
 
         <footer>
@@ -48,6 +63,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
