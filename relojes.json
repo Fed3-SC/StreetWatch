@@ -1,0 +1,10 @@
+[
+  { "id": 1, "nombre": "Rolex Submariner", "precio": 12500 },
+  { "id": 2, "nombre": "Casio G-Shock", "precio": 180 },
+  { "id": 3, "nombre": "Omega Seamaster", "precio": 8500 },
+  { "id": 4, "nombre": "Tag Heuer Carrera", "precio": 4200 },
+  { "id": 5, "nombre": "Seiko Presage", "precio": 650 },
+  { "id": 6, "nombre": "Citizen Eco-Drive", "precio": 320 },
+  { "id": 7, "nombre": "Casio Vintage", "precio": 45 },
+  { "id": 8, "nombre": "Tissot PRX", "precio": 750 }
+]
